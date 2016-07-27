@@ -40,10 +40,6 @@
         td {
             width: 150px;
         }
-
-        #content {
-            margin-left: 350px;
-        }
     </style>
 </head>
 <body>
@@ -59,13 +55,13 @@
             </tr>
             <tr>
                 <td>模板主题：</td>
-                <td>
+                <td align="left">
                     <input type="text" name="subject">
                 </td>
             </tr>
             <tr>
                 <td>模板内容：</td>
-                <td>
+                <td align="left">
                     <textarea rows="4" cols="50" name="content"></textarea>
                 </td>
             </tr>

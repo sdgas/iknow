@@ -16,13 +16,4 @@ public interface TemplateService extends DAO {
      * @return 模板
      */
     public Template findById(int templateId);
-
-    /**
-     * 根据模板相关内容模糊查询
-     * @param msg  关键字
-     * @return 模板信息
-     */
-    public List<Template>  findByContent(String msg);
-
-
 }

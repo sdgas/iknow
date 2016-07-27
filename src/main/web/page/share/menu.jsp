@@ -45,7 +45,7 @@
             </li>
             <li class="divider"></li>
             <li>
-                <a href="<%=basePath%>page/template/#">模板查询</a>
+                <a href="<%=basePath%>page/template/search.jsp">模板查询</a>
             </li>
             <li class="divider"></li>
         </ul>

@@ -25,10 +25,4 @@ public class TemplateServiceImpl extends DaoSupport implements TemplateService {
         params.put("templateId", templateId);
         return (Template) this.findSpecialObject(Template.class, params);
     }
-
-    @Override
-    public List<Template> findByContent(String msg) {
-        Query query = em.createQuery("from Template t where t.subject like '%" + msg + "%' or t.content like '%" + msg + "%'");
-        return query.getResultList();
-    }
 }
