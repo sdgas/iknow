@@ -37,20 +37,17 @@
     <div class="btn-group" style="margin-top: 10px;">
         <%--btn-primary 颜色--%>
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            人员管理 <span class="caret"></span>
+            模板管理 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/user/person.jsp">员工调岗</a>
+                <a href="<%=basePath%>page/template/addTemplate.jsp">新增模板</a>
             </li>
             <li class="divider"></li>
             <li>
-                <a href="<%=basePath%>page/user/alterPwd.jsp">修改账号密码</a>
+                <a href="<%=basePath%>page/template/#">模板查询</a>
             </li>
             <li class="divider"></li>
-            <li>
-                <a href="<%=basePath%>page/user/administrator.jsp">增加部门考勤员</a>
-            </li>
         </ul>
     </div>
     <%--按钮2--%>
