@@ -36,29 +36,43 @@
 </head>
 <body>
 <%@ include file="/page/share/menu.jsp" %>
-<%--<div id="content">
-    <form action="#" method="post">
-
-        <div class="alert" style="width: 450px;margin: 20px 0px 20px 180px;">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Warning!</strong> Best check yourself, you're not looking
-            too good.
-        </div>
-    </form>
+<div id="content">
     <div
             style="display:block; float:left;border:1px solid #FFFFFF;width: 400px;height: 300px">
         <table>
             <tr>
                 <td>
-                    <h4>新需求</h4>
+                    <h4>今日气价</h4>
                 </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    <h5>管道天然气</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>第一档（0~420）：</td>
+                <td>3.4元/m³</td>
+            </tr>
+            <tr>
+                <td>第二档（4200~600）：</td>
+                <td>3.74元/m³</td>
+            </tr>
+            <tr>
+                <td>第三档（600~ ）：</td>
+                <td>4.6元/m³</td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>管道液化石油气</h5>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">15元/m³</td>
             </tr>
         </table>
     </div>
-    <div
+   <%-- <div
             style="display:block; float:left;border:1px solid #FFFFFF;background-color: #d02380;width: 400px;height: 300px">
         <table>
             <tr>
