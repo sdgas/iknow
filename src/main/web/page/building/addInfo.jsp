@@ -36,11 +36,6 @@
     <link rel="stylesheet" href="<%=basePath%>css/bootstrap.min.css">
     <script type="text/javascript" src="<%=basePath%>js/jquery.pstrength.js"></script>
     <style type="text/css">
-        /*修改进度条长度*/
-        .uploadify-queue {
-            width: 300px;
-        }
-
         .mergeTable {
             width: 100%;
             border: 1px solid;
@@ -223,7 +218,7 @@
                 <td>楼宇户内安装明细：</td>
                 <td colspan="4">
                     <input type="hidden" name="fileName">
-                    <input type="file" name="uploadFile" size="16"
+                    <input type="file" name="uploadFile" size="14"
                            onchange="verifyFileName()">
                 </td>
             </tr>

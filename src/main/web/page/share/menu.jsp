@@ -80,29 +80,29 @@
             <li>
                 <a href="BuildingInfo!findBuildingInfoByField.action?msg="> 楼宇收费标准 </a>
             </li>
-            <li class="divider"></li>
-            <li>
-                <a href="#"> 新增户内明细信息 </a>
-            </li>
-            <li class="divider"></li>
-            <li>
-                <a href="#"> 户内明细信息 </a>
-            </li>
         </ul>
     </div>
 
     <%--按钮4--%>
     <div class="btn-group" style="margin-top: 10px;">
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            排班管理<span class="caret"></span>
+            燃气具相关 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/scheduleInfo/DataOperation.jsp">每月排班</a>
+                <a href="<%=basePath%>page/furnace/addInfo.jsp"> 新增产品信息 </a>
             </li>
             <li class="divider"></li>
             <li>
-                <a href="<%=basePath%>page/scheduleInfo/apply.jsp">临时调班</a>
+                <a href="ProductInfo!findProductByField.action?msg=">产品信息</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="<%=basePath%>page/promotion/addInfo.jsp"> 新增促销活动 </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="Promotion!findPromotionByField.action?promotion=">促销活动</a>
             </li>
         </ul>
     </div>

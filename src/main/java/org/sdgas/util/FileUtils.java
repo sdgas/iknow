@@ -151,4 +151,33 @@ public class FileUtils {
     }
 
 
+    public static String uploadAttachment(File file, String fileName, String path) {
+        // 得到保存上传文件的目录的真实路径
+        File dir = new File(path);
+        // 如果该目录不存在，就创建
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+        String[] temp = fileName.split("\\\\");
+        fileName = temp[temp.length - 1];
+        String name = fileName;
+        try {
+            FileInputStream is = new FileInputStream(file);
+            FileOutputStream os = new FileOutputStream(new File(dir, name));
+            byte[] buf = new byte[1024];
+            int len = -1;
+            while ((len = is.read(buf)) != -1) {
+                os.write(buf, 0, len);
+            }
+
+            is.close();
+            os.close();
+        } catch (FileNotFoundException f) {
+            logger.error(f);
+        } catch (IOException ioe) {
+            logger.error(ioe);
+        }
+        return name;
+    }
+
 }
