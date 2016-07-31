@@ -15,14 +15,14 @@
 
 	<!--上传文件的临时目录 -->
 	<constant name="struts.multipart.saveDir" value="#" />
-	<!-- 上传文件的总大小限制200M -->
-	<constant name="struts.multipart.maxSize" value="209715200" />
+	<!-- 上传文件的总大小限制10M -->
+	<constant name="struts.multipart.maxSize" value="10485760" />
 	<!--资源文件配置 -->
 	<constant name="struts.custom.i18n.resources" value="ApplicationResources">
 	</constant>
 
 	<include file="struts/struts4ajax.xml" />
-	<include file="struts/struts4download.xml" />
+	<!--<include file="struts/struts4download.xml" />-->
 
 	<package name="iKnow" extends="struts-default">
 		<!-- 默认action参考，就是当配置里的action都对应不上的时候，最后就会执行这个 -->

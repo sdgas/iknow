@@ -60,7 +60,7 @@ public class NoticeAction extends MyActionSupport implements ModelDriven<NoticeV
         return SUCCESS;
     }
 
-    //查找模板
+    //查找公告
     public String findNoticeByField() {
         if (UserUtil.checkUserLogIn(user)) {
             noticeVO.setResultMessage("<script>alert('请登录！');location.href='/login.jsp';</script>");

@@ -70,11 +70,23 @@
     <div class="btn-group" style="margin-top: 10px;">
         <%--btn-primary 颜色--%>
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            加班管理 <span class="caret"></span>
+            楼宇收费标准 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/ot/apply.jsp"> 录入加班信息 </a>
+                <a href="<%=basePath%>page/building/addInfo.jsp"> 新增楼宇收费标准 </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="BuildingInfo!findBuildingInfoByField.action?msg="> 楼宇收费标准 </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#"> 新增户内明细信息 </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#"> 户内明细信息 </a>
             </li>
         </ul>
     </div>
