@@ -110,28 +110,27 @@
     <%--按钮5--%>
     <div class="btn-group" style="margin-top: 10px;">
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            年假管理<span class="caret"></span>
+            相关文件(政府文件）<span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/annualLeave/DataOperation.jsp">导入年假信息</a>
+                <a href="<%=basePath%>page/gov/addInfo.jsp"> 新增政府文件 </a>
             </li>
-
+            <li class="divider"></li>
+            <li>
+                <a href="GovDoc!findByField.action?subject="> 政府文件 </a>
+            </li>
         </ul>
     </div>
 
     <%--按钮56--%>
     <div class="btn-group" style="margin-top: 10px;">
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            报表管理<span class="caret"></span>
+            户内安装收费标准 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/report/report.jsp">生成月报表</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-                <a href="<%=basePath%>page/report/subsidy.jsp">中晚班补贴</a>
+                <a href="<%=basePath%>page/message/report.jsp">户内安装收费标准</a>
             </li>
         </ul>
     </div>
@@ -139,12 +138,19 @@
     <%--按钮57--%>
     <div class="btn-group" style="margin-top: 10px;">
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            打卡记录管理<span class="caret"></span>
+            燃气知识 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/search/searchDetail.jsp">打卡明细查询</a>
+                <a href="<%=basePath%>page/message/standard.jsp">户内安装标准</a>
             </li>
-
+            <li class="divider"></li>
+            <li>
+                <a href="<%=basePath%>page/knowledge/addInfo.jsp"> 新增安检、隐患整改知识 </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="Knowledge!findByField.action?msg=&subject="> 安检、隐患整改知识 </a>
+            </li>
         </ul>
     </div>

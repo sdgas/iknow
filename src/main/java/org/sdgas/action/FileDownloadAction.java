@@ -34,10 +34,15 @@ public class FileDownloadAction extends ActionSupport implements ModelDriven<Bui
 
     private final BuildingInfoVO buildingInfoVO = new BuildingInfoVO();
     private static String SAVE_PATH_DIR = "D:\\iKnow\\file\\";
+    private static String SAVE_PATH_DIR_G = "D:\\iKnow\\gov\\";
 
     @Override
     public String execute() throws Exception {
-        String path = SAVE_PATH_DIR + buildingInfoVO.getFileName();
+        String path;
+        if (buildingInfoVO.getFlag() == 1)
+            path = SAVE_PATH_DIR_G + buildingInfoVO.getFileName();
+        else
+            path = SAVE_PATH_DIR + buildingInfoVO.getFileName();
         File file = new File(path);// path是根据日志路径和文件名拼接出来的
         String filename = file.getName();// 获取日志文件名称
         InputStream fis = new BufferedInputStream(new FileInputStream(path));
@@ -49,7 +54,7 @@ public class FileDownloadAction extends ActionSupport implements ModelDriven<Bui
 
         response.reset();
         // 先去掉文件名称中的空格,然后转换编码格式为utf-8,保证不出现乱码,这个文件名称用于浏览器的下载框中自动显示的文件名
-        response.addHeader("Content-Disposition", "attachment;filename=" + new String(filename.replaceAll(" ", "").getBytes("utf-8"),"iso8859-1"));
+        response.addHeader("Content-Disposition", "attachment;filename=" + new String(filename.replaceAll(" ", "").getBytes("utf-8"), "iso8859-1"));
         response.addHeader("Content-Length", "" + file.length());
         OutputStream os = new BufferedOutputStream(response.getOutputStream());
         response.setContentType("application/octet-stream");
