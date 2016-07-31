@@ -15,15 +15,6 @@ public class TemplateVO extends BaseVO {
     private String content;
     private String subject;
     private String msg;
-    private List<Template> templates = new ArrayList<Template>();
-
-    public List<Template> getTemplates() {
-        return templates;
-    }
-
-    public void setTemplates(List<Template> templates) {
-        this.templates = templates;
-    }
 
     public String getMsg() {
         return msg;

@@ -45,7 +45,7 @@
             </li>
             <li class="divider"></li>
             <li>
-                <a href="<%=basePath%>page/template/search.jsp">模板查询</a>
+                <a href="Template!findTemplateByField.action?msg=&used=1">模板查询</a>
             </li>
             <li class="divider"></li>
         </ul>
@@ -54,15 +54,15 @@
     <div class="btn-group" style="margin-top: 10px;">
         <%--btn-primary 颜色--%>
         <button type="button" class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">
-            休假管理 <span class="caret"></span>
+            公告栏 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="<%=basePath%>page/leave/apply.jsp"> 录入休假信息 </a>
+                <a href="<%=basePath%>page/notice/addNotice.jsp"> 公告栏信息录入 </a>
             </li>
             <li class="divider"></li>
             <li>
-                <a href="<%=basePath%>page/holiday/DataOperation.jsp"> 上传年度节假日信息 </a>
+                <a href="Notice!findNoticeByField.action?msg=&noticeType="> 公告栏 </a>
             </li>
         </ul>
     </div>

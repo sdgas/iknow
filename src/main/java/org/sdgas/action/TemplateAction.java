@@ -94,7 +94,7 @@ public class TemplateAction extends MyActionSupport implements ModelDriven<Templ
                 params.toArray(), orderBy));
         templateVO.setPageView(pageView);
 
-        view = "/page/template/search.jsp";
+        view = "/page/template/search.jsp?msg=" + templateVO.getMsg() + "&used=" + templateVO.getUsed();
         return VIEW;
     }
 
